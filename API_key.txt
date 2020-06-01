@@ -3,3 +3,24 @@ ajejoe463ko5u0v6m641
 
 Ваш секретный ключ:
 AQVN08OIYdMF8D5rGIFOH-Xm5FnJYEd07nKIPjJP
+
+
+
+AND.PB.MSK
+
+token: AgAAAAA7LlbAAATuwX5xl-tr8kXUkSjxgcj2CfQ
+cloud-id: b1gsd3tlaim84odujb00
+folder-id: b1gp6s7069700q7rol14
+compute-default-zone: ru-central1-a
+
+
+token: AgAAAAA7LlbAAATuwX5xl-tr8kXUkSjxgcj2CfQ
+cloud-id: b1gsd3tlaim84odujb00
+folder-id: b1gvkalmgnvikis4063s
+compute-default-zone: ru-central1-b
+
+yc iam key create --service-account-name cloud-andpbmsk --output key.json
+yc iam key create --folder-id b1gvkalmgnvikis4063s --service-account-name cloud-andpbmsk --output key.json
+
+yc iam key create --folder-id b1gvkalmgnvikis4063s --service-account-id b1gsd3tlaim84odujb00 --output key.json
+
